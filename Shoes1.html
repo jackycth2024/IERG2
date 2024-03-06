@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CUHK Shopping Website - Shoes 1</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-search">
+            <!--logo-->
+            <a href="index.html">
+                <img src="image/img/cuhklogo.jpg" alt="Logo" id="Logo">
+            </a>
+            <!--search bar-->
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
+            </div>
+            <!--shopping cart button-->
+            <div class="shopping-cart">
+                <button type="submit"><img src="image/img/cart.png" alt="shoppingCart" id="cart"></button>
+            </div>
+            <!--shopping list-->
+            <div class="shopping-list" id="shoppingList">
+                <div class="product-entry">
+                    <span>Product 1</span>
+                    <input type="number" placeholder="Quantity" class="quantity-input">
+                </div>
+                <div class="product-entry">
+                    <span>Product 2</span>
+                    <input type="number" placeholder="Quantity" class="quantity-input">
+                </div>
+                <button class="clearBtn" onclick="clearShoppingCart()">Clear Cart</button>
+                <button class="checkoutBtn" onclick="checkout()">Checkout</button>
+            </div>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shoes.html">Shoes</a></li>
+                <li><a href="Clothes.html">Clothes</a></li>
+            </ul>
+        </nav>
+    </header>      
+
+    <section id="product-details">
+        <div class="product" data-product-name="Shoes 1" data-product-price="19.99" data-inventory="10">
+            <a class="product-details">
+                <img src="image/img/shoes1.png" alt="Shoes1 Full-size Image">
+            </a>
+            <h3>Shoes 1</h3>
+            <p>Description</p>
+            <p>$19.99</p>
+            <p>Inventory: <span id="inventoryCount">10</span></p>
+            <button class="addToCart">Add to Cart</button>
+        </div>  
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CUHK Shopping. All rights reserved.</p>
+    </footer>
+    <script src="shopping.js"></script>
+</body>
+</html>
+
